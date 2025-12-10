@@ -7,3 +7,4 @@ pycodestyle==2.14.0
 pyflakes==3.4.0
 Pygments==2.19.2
 pytest==9.0.1
+selenium==4.39.0
