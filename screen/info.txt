@@ -1,0 +1,3 @@
+папка для скриншотов
+
+driver.save_screenshot("./screen/test.png")

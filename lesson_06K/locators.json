@@ -1,0 +1,20 @@
+{
+  "first_name": "[name='first-name']",
+  "last_name": "[name='last-name']",
+  "address": "[name='address']",
+  "email": "[name='e-mail']",
+  "phone": "[name='phone']",
+  "zip_code": "[name='zip-code']",
+  "city": "[name='city']",
+  "country": "[name='country']",
+  "job_position": "[name='job-position']",
+  "company": "[name='company']",
+  "submit_button": "button[type='submit']",
+  
+  "calc_delay_input": "#delay",
+  "calc_button_7": "//span[text()='7']",
+  "calc_button_plus": "//span[text()='+']",
+  "calc_button_8": "//span[text()='8']",
+  "calc_button_equals": "//span[text()='=']",
+  "calc_screen": ".screen"
+}
