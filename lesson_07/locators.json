@@ -1,0 +1,8 @@
+{
+  "calc_delay_input": "#delay",
+  "calc_button_7": "//span[text()='7']",
+  "calc_button_plus": "//span[text()='+']",
+  "calc_button_8": "//span[text()='8']",
+  "calc_button_equals": "//span[text()='=']",
+  "calc_screen": ".screen"
+}
