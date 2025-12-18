@@ -16,7 +16,7 @@ class AuthApi:
             f"{self.base_url}/auth/companies",
             json=body)
 
-    # Получить API-key для компании
+    # создать API-key для компании
     def create_api_key(self):
         body = {
             "login": LOGIN,
@@ -27,3 +27,20 @@ class AuthApi:
             f"{self.base_url}/auth/keys",
             json=body)
         return resp
+
+    # получить список всех ключей
+    def get_api_keys(self):
+        body = {
+            "login": LOGIN,
+            "password": PASSWORD,
+            "companyId": COMPANY_ID
+        }
+        return requests.post(
+            f"{self.base_url}/auth/keys/get",
+            json=body)
+
+    # удалить ключ по его значению
+    def delete_api_key(self, key):
+        return requests.delete(
+            f"{self.base_url}/auth/keys/{key}",
+            headers={"Content-Type": "application/json"})
