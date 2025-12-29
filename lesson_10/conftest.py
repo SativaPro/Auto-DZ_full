@@ -8,6 +8,10 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 @pytest.fixture
 def chrome_driver():
+    """
+    Фикстура для создания экземпляра Chrome WebDriver.
+    После завершения теста автоматически закрывает браузер.
+    """
     driver = webdriver.Chrome(
         service=ChromeService(ChromeDriverManager().install())
     )
@@ -18,6 +22,10 @@ def chrome_driver():
 
 @pytest.fixture
 def firefox_driver():
+    """
+    Фикстура для создания экземпляра Firefox WebDriver.
+    После завершения теста автоматически закрывает браузер.
+    """
     driver = webdriver.Firefox(
         service=FirefoxService(GeckoDriverManager().install())
     )
